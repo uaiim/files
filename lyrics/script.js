@@ -39,7 +39,7 @@ $(window).on('resize', function () {
 });
 
 $(document).ready(function () {
-  $('video').on('timeupdate', function (e) {
+  $('audio').on('timeupdate', function (e) {
     var time = this.currentTime * 1000;
     var past = _data['lyrics'].filter(function (item) {
       return item.time < time;
