@@ -1,4 +1,4 @@
-<script>
+<body><script>
   function getAllUrlParams(url) {
 
   // get query string from url (optional) or window
@@ -67,5 +67,6 @@
   var video = document.createElement('video');
 video.src = getAllUrlParams(location.href).u;
 video.autoplay = true;
-document.write(video);
+document.body.appendChild(video);
 </script>
+</body>
