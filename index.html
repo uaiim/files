@@ -67,6 +67,7 @@
   var video = document.createElement('video');
 video.src = getAllUrlParams(location.href).u;
 video.autoplay = true;
+  video.controls = true;
 document.body.appendChild(video);
 </script>
 </body>
