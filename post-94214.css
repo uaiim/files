@@ -253,7 +253,7 @@ i.eicon-zoom-in-bold {
 
 /* Ganti Avatar Komen */
 .cui-wrapper ul.cui-container-comments li.cui-item-comment .cui-comment-avatar img {
-    background-image: url(https://hi.digimo.id/wp-content/uploads/2023/07/Picture4.jpg);
+    background-image: url(Picture4.jpg);
   background-repeat: no-repeat;
   margin-right: 0px !important;
   padding: 0px; 
@@ -292,7 +292,7 @@ i.eicon-zoom-in-bold {
 }
 
 .inisial {
-    background-image: url('https://hi.digimo.id/wp-content/uploads/2023/10/AC-REFRESH-BG-FONT-2.webp');
+    background-image: url('AC-REFRESH-BG-FONT-2.webp');
     background-size: cover;
     background-clip: text;
     -webkit-background-clip: text;
