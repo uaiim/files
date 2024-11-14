@@ -23,4 +23,3 @@ jobs:
         run: yarn publish --access restricted
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-T
