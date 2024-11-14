@@ -1,3 +1,6 @@
+on:
+  release:
+    types: [published]
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -13,3 +16,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB }}
           NPM_TOKEN: ${{ secrets.NPM }}
+        run : npx semantic-release
