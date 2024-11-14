@@ -1,5 +1,4 @@
-name: Publish Package to npmjs
-on:
+jobs:
   release:
     runs-on: ubuntu-latest
     steps:
