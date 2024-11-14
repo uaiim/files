@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/uaiim/files/issues"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/uaiim/files#readme"
 }
