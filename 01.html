@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Gambar</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Upload Gambar</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <input type="file" name="image" id="image" required>
+        <input type="text" name="width1" placeholder="Width 1 (px)" required>
+        <input type="text" name="height1" placeholder="Height 1 (px)" required>
+        <input type="text" name="width2" placeholder="Width 2 (px)" required>
+        <input type="text" name="height2" placeholder="Height 2 (px)" required>
+        <input type="text" name="width3" placeholder="Width 3 (px)" required>
+        <input type="text" name="height3" placeholder="Height 3 (px)" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        $(document).ready(function() {
+            $('#uploadForm').on('submit', function(e) {
+                e.preventDefault();
+                var formData = new FormData(this);
+                $.ajax({
+                    url: '01.php',
+                    type: 'POST',
+                    data: formData,
+                    contentType: false,
+                    processData: false,
+                    success: function(response) {
+                        $('#result').html(response);
+                    },
+                    error: function() {
+                        alert('Error uploading image.');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
