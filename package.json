@@ -1,0 +1,22 @@
+{
+  "name": "@undangan/fd",
+  "version": "15.12.24",
+  "description": "",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uaiim/files.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uaiim/files/issues"
+  },
+  "homepage": "https://github.com/uaiim/files#readme"
+}
